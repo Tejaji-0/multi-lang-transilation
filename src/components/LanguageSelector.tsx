@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { Search, Check, ChevronDown } from 'lucide-react';
 import { LANGUAGES } from '../services/languages';
 

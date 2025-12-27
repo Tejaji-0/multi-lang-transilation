@@ -162,18 +162,6 @@ class TranslationService {
     targetLang: string,
     sourceLang: string
   ): TranslationResult {
-    // Better mock: show a note that this is mock translation
-    const languageNames: { [key: string]: string } = {
-      hi: 'Hindi', ta: 'Tamil', te: 'Telugu', kn: 'Kannada',
-      ml: 'Malayalam', mr: 'Marathi', bn: 'Bengali', gu: 'Gujarati',
-      pa: 'Punjabi', ur: 'Urdu', or: 'Odia', as: 'Assamese',
-      en: 'English', es: 'Spanish', fr: 'French', de: 'German',
-      zh: 'Chinese', ja: 'Japanese', ko: 'Korean', ar: 'Arabic',
-      ru: 'Russian', pt: 'Portuguese', it: 'Italian',
-    };
-
-    const langName = languageNames[targetLang] || targetLang;
-    
     return {
       translatedText: `${text}\n\n[Note: Using free MyMemory API. For production, consider Google Translate or LibreTranslate API]`,
       sourceLanguage: sourceLang,

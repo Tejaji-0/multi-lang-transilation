@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { AlertCircle, CheckCircle, XCircle, Info } from 'lucide-react';
 
 interface AlertProps {
